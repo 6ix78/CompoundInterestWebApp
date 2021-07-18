@@ -47,6 +47,7 @@
     if (compoundingPeriods == "Daily"){
         multiplier = 365;
     }
+    // Round to nearest hundredth and add functionlity for other periods
     
     finalAmount = principle * Math.pow(1+(interestRate/multiplier),(years/multiplier));
     console.log((1+(interestRate/multiplier))**(compoundingPeriods/multiplier));
